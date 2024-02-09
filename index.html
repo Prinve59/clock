@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{margin: 0;
+        padding: 0;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+        .second{
+            background-color: rgb(195, 223, 223);
+            width: 140px;
+            height:140px;
+            line-height: 130px;
+            border-radius: 70px;
+            border:2px solid rgb(202, 180, 180);
+            color: brown;
+            animation: second 60s infinite linear;
+            position: relative;
+            margin-top: 15px;
+        }
+        @keyframes second{
+            0%{
+                transform: rotate(0deg);
+            }100%{
+                transform: rotate(360deg);
+            }
+        }
+        .minute{
+            background-color: rgba(0, 0,0,0);
+            width: 140px;
+            height:140px;
+            line-height: 130px;
+            border-radius: 70px;
+            border:2px solid rgb(202, 180, 180);
+            color: brown;
+            animation: minute 3600s infinite linear;
+            position: absolute;
+            margin-top: 15px;
+        }
+        @keyframes minute{
+            0%{
+                transform: rotate(0deg);
+            }100%{
+                transform: rotate(360deg);
+            }
+        }
+        .hour{
+            background-color: rgba(0, 0,0,0);
+            width: 140px;
+            height:140px;
+            line-height: 130px;
+            border-radius: 70px;
+            border:2px solid rgb(202, 180, 180);
+            color: brown;
+            animation: hour 216000s  infinite linear;
+            position: absolute;
+            margin-top: 15px;
+        }
+        @keyframes hour{
+            0%{
+                transform: rotate(0deg);
+            }100%{
+                transform: rotate(360deg);
+            }
+        }
+        .outer{
+            height: 170px;
+            width: 170px;
+            background-color: rgba(0, 0, 0,0);
+            position: absolute;
+            text-align: center;
+            font-size: small;
+            border-radius: 85px;
+        }
+    </style>
+    <title>Clock</title>
+</head>
+<body>
+    <div class="main">
+        <div class="second">
+            ------s-------            
+        </div>
+        <div class="outer">
+            <pre>
+12
+11           1
+
+ 10                  2  
+
+
+9                      3
+
+
+ 8                  4
+
+7          5
+6
+            </pre> 
+        </div>
+        <div class="minute">m-------------
+        </div>
+        <div class="hour">-------------h</div>
+    </div>
+</body>
+</html>
